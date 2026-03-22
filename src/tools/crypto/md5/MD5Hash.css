@@ -1,0 +1,116 @@
+.md5-hash {
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section h3 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.input-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  resize: vertical;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.calculate-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.calculate-button:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.calculate-button:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.result-section h3 {
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.hash-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--card-bg);
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.hash-result code {
+  flex: 1;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: var(--text-color);
+  word-break: break-all;
+}
+
+.copy-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background-color: var(--secondary-hover);
+}
+
+@media (max-width: 768px) {
+  .md5-hash {
+    padding: 15px;
+  }
+  
+  .input-section textarea {
+    rows: 4;
+  }
+  
+  .hash-result {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hash-result code {
+    margin-bottom: 10px;
+  }
+  
+  .copy-button {
+    align-self: flex-start;
+  }
+}

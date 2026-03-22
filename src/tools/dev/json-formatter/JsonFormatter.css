@@ -1,0 +1,145 @@
+.json-formatter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-section,
+.output-section {
+  width: 100%;
+}
+
+.input-section h3,
+.output-section h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.input-section textarea,
+.output-section textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 200px;
+}
+
+.input-section textarea:focus,
+.output-section textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.indent-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.indent-option input {
+  width: 60px;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: white;
+  font-family: inherit;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.action-buttons button:hover {
+  background-color: #535bf2;
+}
+
+.error-message {
+  padding: 1rem;
+  background-color: #ff444422;
+  border: 1px solid #ff4444;
+  border-radius: 4px;
+  color: #ff4444;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #3a3a3a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.actions button:hover {
+  background-color: #4a4a4a;
+}
+
+@media (prefers-color-scheme: light) {
+  .input-section textarea,
+  .output-section textarea {
+    background-color: #f8f9fa;
+    color: #333;
+    border-color: #ddd;
+  }
+
+  .indent-option input {
+    background-color: #e9ecef;
+    color: #333;
+    border-color: #ddd;
+  }
+
+  .action-buttons button {
+    background-color: #646cff;
+  }
+
+  .action-buttons button:hover {
+    background-color: #535bf2;
+  }
+
+  .error-message {
+    background-color: #ff444411;
+    border-color: #ff4444;
+    color: #ff4444;
+  }
+
+  .actions button {
+    background-color: #dee2e6;
+    color: #333;
+  }
+
+  .actions button:hover {
+    background-color: #ced4da;
+  }
+}
