@@ -1,0 +1,100 @@
+.text-to-speech {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.setting-item label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.setting-item select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.setting-item input[type="range"] {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.speak-button, .stop-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.speak-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.speak-button:hover:not(:disabled) {
+  background-color: #0069d9;
+}
+
+.stop-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.stop-button:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.speak-button:disabled, .stop-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .text-to-speech {
+    gap: 15px;
+  }
+  
+  .input-section textarea {
+    rows: 5;
+  }
+  
+  .controls {
+    flex-direction: column;
+  }
+}

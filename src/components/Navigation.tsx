@@ -1,5 +1,6 @@
 import React from 'react';
 import { toolCategories } from '../utils/toolCategories';
+import { tools } from '../utils/tools';
 
 interface NavigationProps {
   selectedCategory: string;
@@ -19,6 +20,7 @@ const Navigation: React.FC<NavigationProps> = ({ selectedCategory, onCategoryCha
           >
             <span className="category-icon">{category.icon}</span>
             <span className="category-name">{category.name}</span>
+            <span className="category-count">({tools.filter(tool => tool.category === category.key).length})</span>
           </li>
         ))}
       </ul>

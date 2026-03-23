@@ -1,0 +1,156 @@
+.text-typesetting {
+  padding: 20px;
+}
+
+.input-section {
+  margin-bottom: 30px;
+}
+
+.input-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.input-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+  margin-bottom: 20px;
+  min-height: 150px;
+}
+
+.typesetting-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.control-group input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.control-group select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.typeset-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.typeset-button:hover:not(:disabled) {
+  background-color: #0069d9;
+}
+
+.typeset-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.output-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.output-section h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.typeset-text {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 100px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+
+.copy-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-button:hover {
+  background-color: #218838;
+}
+
+.info-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e2e3e5;
+  border-radius: 4px;
+}
+
+.info-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.info-section li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .typesetting-controls {
+    grid-template-columns: 1fr;
+  }
+  
+  .typeset-button {
+    width: 100%;
+  }
+  
+  .copy-button {
+    width: 100%;
+  }
+}
